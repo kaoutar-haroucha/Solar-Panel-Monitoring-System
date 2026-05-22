@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="panel_solar/panel_solar.vcxproj" Id="dc05a4d5-cffc-46a4-9ed0-9e6e30dba3ba" />
+</Solution>
