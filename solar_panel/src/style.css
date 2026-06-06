@@ -1,0 +1,87 @@
+/* --- FOND ET STRUCTURE --- */
+.root {
+    -fx-background-color: #0d1117;
+    -fx-font-family: 'Segoe UI', sans-serif;
+}
+
+.sidebar {
+    -fx-background-color: #161b22;
+    -fx-border-color: #30363d;
+    -fx-border-width: 0 1 0 0;
+}
+
+.panel-card {
+    -fx-background-color: #161b22;
+    -fx-background-radius: 12;
+    -fx-border-color: #30363d;
+    -fx-border-radius: 12;
+    -fx-border-width: 1;
+}
+
+/* --- TEXTES ET MENUS --- */
+.card-title { -fx-text-fill: #8b949e; -fx-font-size: 13px; -fx-font-weight: bold; }
+.card-value { -fx-text-fill: #c9d1d9; -fx-font-size: 24px; -fx-font-weight: bold; }
+
+.menu-item {
+    -fx-background-color: transparent; -fx-text-fill: #8b949e; -fx-font-size: 14px;
+    -fx-font-weight: bold; -fx-alignment: center-left; -fx-padding: 10 20; -fx-cursor: hand;
+}
+.menu-item:hover { -fx-background-color: #21262d; -fx-text-fill: #c9d1d9; -fx-background-radius: 8; }
+.menu-item-active { -fx-background-color: #1f6feb; -fx-text-fill: #ffffff; -fx-background-radius: 8; }
+
+/* --- BOUTONS --- */
+.btn-start { -fx-background-color: #238636; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 6; -fx-cursor: hand; }
+.btn-start:hover { -fx-background-color: #2ea043; }
+.btn-stop { -fx-background-color: #da3633; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 6; -fx-cursor: hand; }
+.btn-stop:hover { -fx-background-color: #f85149; }
+
+/* --- GRAPHIQUES (CHARTS) --- */
+.chart-plot-background { -fx-background-color: transparent; }
+.chart-vertical-grid-lines, .chart-horizontal-grid-lines { -fx-stroke: #30363d; -fx-stroke-dash-array: 5, 5; }
+.axis-label, .axis { -fx-text-fill: #8b949e; }
+.axis:bottom .tick-label, .axis:left .tick-label { -fx-text-fill: #8b949e; }
+.axis:bottom .tick-mark, .axis:left .tick-mark { -fx-stroke: transparent; }
+
+.chart-legend { -fx-background-color: transparent; }
+.chart-legend-item { -fx-text-fill: #c9d1d9; -fx-font-weight: bold; }
+
+/* ======================================================= */
+/* COULEURS SPÉCIFIQUES DES GRAPHIQUES (LIGNES ET LÉGENDES) */
+/* ======================================================= */
+
+/* 1. Area Chart (Puissance - Orange Néon) */
+#powerChart .default-color0.chart-series-area-line { -fx-stroke: #f59e0b; -fx-stroke-width: 3px; }
+#powerChart .default-color0.chart-series-area-fill { -fx-fill: rgba(245, 158, 11, 0.15); }
+#powerChart .default-color0.chart-line-symbol { -fx-background-color: #f59e0b, #161b22; }
+
+/* 2. Line Chart (Tension & Courant) */
+/* Tension (Bleu) -> Série 0 */
+#viChart .default-color0.chart-series-line { -fx-stroke: #ef4444; -fx-stroke-width: 2px; }
+#viChart .default-color0.chart-line-symbol { -fx-background-color: #ef4444, #161b22; }
+#viChart .chart-legend-item-symbol.default-color0 { -fx-background-color: #ef4444, #161b22; }
+
+/* Courant (Vert) -> Série 1 */
+#viChart .default-color1.chart-series-line { -fx-stroke: #3fb950; -fx-stroke-width: 2px; }
+#viChart .default-color1.chart-line-symbol { -fx-background-color: #3fb950, #161b22; }
+#viChart .chart-legend-item-symbol.default-color1 { -fx-background-color: #3fb950, #161b22; }
+/* --- LOGS --- */
+.text-area {
+    -fx-control-inner-background: #0d1117; 
+    -fx-background-color: #30363d, #0d1117;
+    -fx-background-insets: 0, 1;
+    -fx-text-fill: #3fb950;
+}
+.text-area .viewport { -fx-background-color: #0d1117; }
+.text-area .content { -fx-background-color: transparent; }
+
+/* --- TABLEAU --- */
+.table-view { -fx-background-color: #161b22; -fx-border-color: #30363d; -fx-border-radius: 8; }
+.table-view .column-header-background { -fx-background-color: #21262d; }
+.table-view .column-header { -fx-background-color: transparent; -fx-border-color: #30363d; -fx-border-width: 0 1 0 0; }
+.table-view .column-header .label { -fx-text-fill: #8b949e; -fx-font-weight: bold; }
+.table-view .table-row-cell { -fx-background-color: #0d1117; -fx-border-color: transparent transparent #30363d transparent; }
+.table-view .table-row-cell:odd { -fx-background-color: #161b22; }
+.table-view .table-cell { -fx-text-fill: #c9d1d9; -fx-alignment: center; }
+
+/* --- FORMULAIRES --- */
+.text-field, .combo-box { -fx-background-color: #0d1117; -fx-text-fill: white; -fx-border-color: #30363d; -fx-border-radius: 6; -fx-padding: 8 12; }
