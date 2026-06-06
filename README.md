@@ -144,8 +144,11 @@ The SQLite database stores the data
 
 
 👩‍💻 Author
+
 Kaoutar Haroucha
+
 adam ouahid
 
 📄 License
+
 This project is for educational purposes only.
