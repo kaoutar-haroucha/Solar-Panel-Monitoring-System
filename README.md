@@ -103,7 +103,7 @@ Java application displays data (JavaFX)
 SQLite stores the data
 
 
-👩‍💻 Author
+👥 Contributors
 Kaoutar Haroucha
 adam ouahid
 
