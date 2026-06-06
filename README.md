@@ -105,7 +105,7 @@ SQLite stores the data
 
 👥 Contributors
 Kaoutar Haroucha
-adam ouahid
+@https://github.com/ouhidadam
 
 📄 License
 Educational project
