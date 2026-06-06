@@ -1,4 +1,5 @@
 🌞 Solar Panel Monitoring System
+
 📌 Overview
 The Solar Panel Monitoring System is a hybrid software project that integrates C, Java, and SQLite to simulate, process, and visualize solar energy data.
 The system workflow is designed as follows:
@@ -132,9 +133,13 @@ The SQLite database stores the data
 🔮 Future Improvements
 
 📊 Real-time data updates
+
 🌐 Web-based dashboard
+
 📡 IoT integration (real sensors)
+
 🌙 Dark mode UI
+
 🔔 Alert system
 
 
