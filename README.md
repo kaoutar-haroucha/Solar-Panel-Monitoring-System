@@ -1,63 +1,52 @@
-🌞 Solar Panel Monitoring System
+# 🌞 Solar Panel Monitoring System
 
-📌 Overview
-The Solar Panel Monitoring System is a hybrid software project that integrates C, Java, and SQLite to simulate, process, and visualize solar energy data.
-The system workflow is designed as follows:
+## 📌 Overview
+The **Solar Panel Monitoring System** is a hybrid application that combines **C, Java, and SQLite** to simulate, process, and visualize solar energy data.
 
-C program simulates solar panel data
-Java application (JavaFX) processes and displays the data
-SQLite database stores the data for persistence
+This project demonstrates a complete pipeline:
+**C Simulation → Java Dashboard → SQLite Storage**
 
-This project demonstrates a complete pipeline from data simulation → processing → visualization → storage.
+---
 
-🎯 Objectives
+## 🎯 Objectives
+- Simulate solar panel energy production using C  
+- Develop a graphical dashboard using JavaFX  
+- Store and manage data using SQLite  
+- Build a multi-language integrated system  
+- Visualize energy data in a clear interface  
 
-Simulate solar panel energy production using C
-Develop a graphical dashboard using JavaFX
-Store and manage data using SQLite
-Build a multi-language integrated system
-Visualize energy metrics in a user-friendly interface
+---
 
+## 🏗️ System Architecture
+C Simulation (panel_solar)
+↓
+Java Application (JavaFX Dashboard)
+↓
+SQLite Database (solar_data.db)
+---
 
-🏗️ System Architecture
-+----------------------+
-|   C Simulation       |
-|   (panel_solar)      |
-+----------+-----------+
-           |
-           v
-+------------------------------+
-| Java Application             |
-| JavaFX Dashboard             |
-+----------+-------------------+
-           |
-           v
-+----------------------+
-| SQLite Database      |
-| (solar_data.db)      |
-+----------------------+
+## 🛠 Technologies Used
 
+### 🔹 Programming Languages
+- C → Data simulation  
+- Java → Application logic  
 
-🛠 Technologies Used
-🔹 Programming Languages
+### 🔹 Tools & Frameworks
+- JavaFX → Graphical User Interface  
+- SQLite → Database  
+- JDBC → Database connectivity  
+- Eclipse IDE → Java development  
 
-C → Data simulation
-Java → Application logic
+---
 
-🔹 Tools & Frameworks
-
-JavaFX → Graphical User Interface
-SQLite → Database
-JDBC → Database connectivity
-Eclipse IDE → Java development
+## 📂 Project Structure
 
 
-📂 Project Structure
 Solar-Panel-Monitoring-System/
 │
-├── panel_solar/              # C project (simulation)
+├── panel_solar/              # C project
 │
-├── solar_panel/              # Java project (Eclipse)
+├── solar_panel/              # Java project
 │   ├── src/solar_panel/
 │   │   ├── SolarDashboard.java
 │   │   ├── style.css
@@ -67,88 +56,57 @@ Solar-Panel-Monitoring-System/
 │   └── solar_data.db
 │
 ├── images/
-│   └── dashboard.png         # Dashboard screenshot
+│   └── dashboard.png
 │
 ├── README.md
 └── .gitignore
 
+---
 
-⚙️ Features
-✅ Solar data simulation using C
-✅ JavaFX interactive dashboard
-✅ Energy monitoring (kWh)
-✅ Data visualization (UI + styling)
-✅ SQLite database storage
-✅ CSV export functionality
+## ⚙️ Features
+- ✅ Solar data simulation using C  
+- ✅ JavaFX interactive dashboard  
+- ✅ Energy monitoring (kWh)  
+- ✅ SQLite database storage  
+- ✅ Styled user interface  
+- ✅ Data export to CSV  
 
-📸 Dashboard Preview
-Below is a preview of the JavaFX dashboard:
+---
+
+## 📸 Dashboard Preview
+
 images/dashboard.png
 
-🔍 Description
+---
 
-Data is generated using the C simulation
-Java processes and displays the data
-SQLite stores the data
-The dashboard shows energy values and UI components
+## 🚀 Setup & Run
 
-
-🚀 Installation & Setup
-1. Clone the repository
-Shellgit clone https://github.com/kaoutar-haroucha/Solar-Panel-Monitoring-System.gitAfficher plus de lignes
-
-2. Run C Simulation
+### 1. Clone repository
+```bash
+git clone https://github.com/kaoutar-haroucha/Solar-Panel-Monitoring-System.git
+2. Run C project
 
 Open panel_solar
-Compile and run the program
+Compile and run
 
+3. Run Java project
 
-3. Import Java Project into Eclipse
-
-Open Eclipse
-Go to:
-File → Import → Existing Projects into Workspace
-
-
-Select solar_panel
-
-
-4. Configure JavaFX
-Add VM options in Run Configuration:
-Shell--module-path "PATH_TO_FX/lib" --add-modules javafx.controls,javafx.fxmlAfficher plus de lignes
-
-5. Run the Application
+Import solar_panel into Eclipse
 Run:
-SolarDashboard.java
 
+SolarDashboard.java
 
 🧪 How It Works
 
-The C program generates solar data
-The Java application reads and processes the data
-The JavaFX dashboard visualizes the data
-The SQLite database stores the data
-
-
-🔮 Future Improvements
-
-📊 Real-time data updates
-
-🌐 Web-based dashboard
-
-📡 IoT integration (real sensors)
-
-🌙 Dark mode UI
-
-🔔 Alert system
+C program generates solar data
+Java application displays data (JavaFX)
+SQLite stores the data
 
 
 👩‍💻 Author
-
 Kaoutar Haroucha
-
 adam ouahid
 
 📄 License
+Educational project
 
-This project is for educational purposes only.
