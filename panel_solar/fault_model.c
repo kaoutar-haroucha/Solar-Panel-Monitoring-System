@@ -2,7 +2,7 @@
 
 #define IRRADIANCE_THRESHOLD 500.0f
 #define TEMP_THRESHOLD 80.0f
-#define EFFICIENCY_THRESHOLD 0.14f
+#define EFFICIENCY_THRESHOLD 0.10f
 
 void detect_faults(PV_Panel* panel)
 {
